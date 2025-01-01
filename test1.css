@@ -1013,18 +1013,12 @@ section:nth-child(odd) .animate.scroll,
         transition-delay: .25s;
     }
 
-    .home-imgHover {
-        pointer-events: none;
-        opacity: .6;
-        size: auto;
-    }
-
     .home-content h1 {
-        font-size: 1rem;
+        font-size: auto;
     }
 
     .home-content p {
-        font-size: .5rem;
+        font-size: auto;
     }
 
     .btn-box {
