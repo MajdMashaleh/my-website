@@ -1014,11 +1014,11 @@ section:nth-child(odd) .animate.scroll,
     }
 
     .home-content h1 {
-        font-size: .01rem;
+        font-size: 1rem;
     }
 
     .home-content p {
-        font-size: .08rem;
+        text-size-adjust: 1rem;
     }
 
     .btn-box {
