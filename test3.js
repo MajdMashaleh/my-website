@@ -11,27 +11,33 @@ menuIcon.onclick = ()=> {
 let section = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
 
-window.onscroll = ()=> {
-    section.forEach(sec => {
+window.onscroll = () => {
+    //sticky header
+    let header = document.querySelector('header');
+    header.classList.toggle('sticky', window.scrollY > 100);
+
+    //animate sections on scroll
+    let sections = document.querySelectorAll('section');
+    let navLinks = document.querySelectorAll('header nav a');
+
+    sections.forEach(sec => {
         let top = window.scrollY;
+        let offset = sec.offsetTop - 150;
         let height = sec.offsetHeight;
-        let offset = sec.offsetTop - 100;
         let id = sec.getAttribute('id');
 
-        if(top >= offset && top < offset + height) {
+        if (top >= offset && top < offset + height) {
             navLinks.forEach(links => {
                 links.classList.remove('active');
                 document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
             });
             //active section for animation on scroll
             sec.classList.add('show-animate');
-        }
-        //if want to animate on scroll use this 
-        else{
+        } else {
             sec.classList.remove('show-animate');
         }
     });
-}
+};
 //scroll section
 window.onscroll = ()=> {
     //sticky header
