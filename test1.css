@@ -1017,6 +1017,27 @@ section:nth-child(odd) .animate.scroll,
         pointer-events: none;
         opacity: .6;
     }
+
+    .home-content h1 {
+        font-size: 3.5rem;
+    }
+
+    .home-content p {
+        font-size: 1.4rem;
+    }
+
+    .btn-box {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .btn-box .btn {
+        width: 100%;
+    }
+
+    .home-sci {
+        bottom: 2rem;
+    }
 }
 
 
