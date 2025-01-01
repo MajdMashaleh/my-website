@@ -980,6 +980,44 @@ section:nth-child(odd) .animate.scroll,
 }
 
 
+@media (max-width: 768px) {
+    .header {
+        height: auto;
+        padding: 1rem 2%;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: fixed; /* Fix navbar to top */
+        top: 0;
+        left: 0;
+        width: auto;
+        height: auto;
+        padding: .5rem 2%; /* Adjust padding */
+    }
+
+    .navbar a {
+        display: block;
+        margin: 1rem 0; /* Adjust margin */
+        font-size: 1.5rem; /* Reduce font size */
+        transform: translateX(-20rem);
+        transition: .25s ease;
+        transition-delay: 0s;
+    }
+
+    .navbar.active a {
+        transform: translateX(0);
+        transition-delay: .25s;
+    }
+
+    .home-imgHover {
+        pointer-events: none;
+        opacity: .6;
+    }
+}
 
 
 
