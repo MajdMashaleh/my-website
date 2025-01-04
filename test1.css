@@ -717,6 +717,75 @@ span{
     color: var(--bg-color);
 }
 
+.project-description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%; /* Or adjust width as needed */
+    max-width: 1200px; /* Limit the width on large screens */
+}
+
+/* Title Styling */
+.project-description h2 {
+    font-size: 4em;
+    color: var(--text-color);
+    margin: 0;
+    text-align: left;
+    flex: 1; /* Allow title to take up available space */
+}
+
+/* Project Description Styling */
+.project-description p {
+    font-size: 1.8em;
+    line-height: 1.6;
+    text-align: left;
+    margin: 0;
+    flex: 1; /* Allow description to take up available space */
+}
+
+/* Project Image Styling */
+.project-description #project-image {
+    width: 250px; /* Adjust size as needed */
+    height: 250px; /* Adjust size as needed */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the circular shape */
+    margin-left: 40px;
+    flex-shrink: 0; /* Prevent image from shrinking */
+}
+
+/* Links Styling */
+.project-description a {
+    display: inline-block;
+    font-size: 1.5em;
+    color: var(--text-color);
+    text-decoration: none;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--second-bg-color);
+    width: 100%;
+    text-align: center;
+    transition: background-color 0.3s;
+    opacity: 0.8;
+    overflow: hidden;
+}
+
+/* Hover Effect for Links */
+.project-description a:hover {
+    background-color: var(--second-bg-color);
+    color: white;
+    opacity: 1;
+}
+
+/* Back Link Styling */
+.project-description a[href="index.html"] {
+    background-color: var(--second-bg-color);
+    width: auto;
+    text-align: left;
+    margin-top: 30px;
+}
+
+
 .contact {
     min-height: auto;
     padding-bottom: 7rem;

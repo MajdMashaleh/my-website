@@ -128,3 +128,35 @@ ScrollReveal().reveal('.home-content p ,.home-content h3 , .about-content', { or
             });
         });
     }
+
+    //optionas 
+    document.addEventListener("DOMContentLoaded", () => {
+        const viewButtons = document.querySelectorAll(".view-btn");
+        const optionsSections = document.querySelectorAll(".options-section");
+        const backButtons = document.querySelectorAll(".back-btn");
+    
+        viewButtons.forEach((btn) => {
+            btn.addEventListener("click", (e) => {
+                e.preventDefault();
+                const targetId = btn.getAttribute("href").replace("#", "");
+                optionsSections.forEach((section) => {
+                    section.classList.remove("active");
+                });
+                document.getElementById(targetId).classList.add("active");
+            });
+        });
+    
+        backButtons.forEach((btn) => {
+            btn.addEventListener("click", (e) => {
+                e.preventDefault();
+                optionsSections.forEach((section) => {
+                    section.classList.remove("active");
+                });
+            });
+        });
+        
+    });
+    
+
+    
+    
