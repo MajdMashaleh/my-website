@@ -20,11 +20,14 @@
             
                 <!-- Links for Presentation, GitHub, etc. -->
                 <div class="project-links">
-                    <a id="view-presentation" href="#" target="_blank" style="display:none;">📑 View Presentation</a>
+                    <a id="view-presentation" href="#" target="_blank" style="display:none;">📑 View Cretificates</a>
                     <a id="view-report" href="#" target="_blank" style="display:none;">📑 View Report</a>
                     <a id="view-video" href="#" target="_blank" style="display:none;">📑 View Video</a>
                     <a id="view-github" href="#" target="_blank" style="display:none;">🌐 View on GitHub</a>
                     <a id="view-code" href="#"  style="display:none;">📄 Code</a>
+                    <a id="view-networksecurity" href="#" target="_blank" style="display:none;">📑 network security</a>
+                    <a id="view-progsec" href="#" target="_blank" style="display:none;">📑 programming security</a>
+                    <a id="view-certificates" href="#" target="_blank" style="display:none;">📑 View certificates</a>
                 </div>
 
             <!-- Back to main projects page -->
@@ -67,20 +70,20 @@
         }
     },
     "4": {
-        title: "Presentations",
-        description:"This project involves creating presentations to share ideas or information. It includes designing slides and organizing content to clearly explain key points and engage the audience.",
-        image:  "project4.jpg",  
+        title: "certificates",
+        description:"Here are my certifications, showcasing my skills and dedication to learning in fields like cybersecurity, networking, programming, and more. They reflect my growth and commitment to staying updated with industry trends.",
+        image:  "project4.PNG",  
         buttons: {
-            presentation: "project4-presentation.pdf",
+            certificates: "https://drive.google.com/drive/folders/1MJQ0tEVb0zVSvNVe0FJcp6lpUIe76FDX?usp=sharing",
         }
     },
     "5": {
-        title: "Hacking Lab",
+        title: "Security Labs",
         description: "This project involves practicing ethical hacking in labs. It includes testing systems, finding weaknesses, and learning how to improve security.",
         image: "project5.jpg",  
         buttons: {
-            presentation: "project5-presentation.pdf",
-            github: ""
+            networksecurity: "https://drive.google.com/file/d/1EGRVlhsThduZYzC9KB8NAIHFBJjGPIxk/view?usp=drive_link",
+            progsec: "https://drive.google.com/file/d/1ECuOpiT5eVyocHvQ-VX7hlfS5lXCJJeV/view?usp=drive_link",
         }
     },
     "6": {
@@ -104,10 +107,12 @@ const descriptionElement = document.getElementById('project-description');
 const projectImage = document.getElementById('project-image');
 const presentationLink = document.getElementById('view-presentation');
 const githubLink = document.getElementById('view-github');
-const codelink = document.getElementById('code');
+const codelink = document.getElementById('view-code');
 const reportLink = document.getElementById('view-report');
 const videoLink = document.getElementById('view-video');
-
+const netseclink = document.getElementById('view-networksecurity');
+const progseclink = document.getElementById('view-progsec');
+const certificateslink = document.getElementById('view-certificates');
 
 // Set content based on project data
 if (projects[projectId]) {

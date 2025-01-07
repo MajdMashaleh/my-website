@@ -157,6 +157,19 @@ ScrollReveal().reveal('.home-content p ,.home-content h3 , .about-content', { or
         
     });
     
-
-    
+var swiper = new Swiper(".mySwiper", {
+    slideperview: 1,
+    spaceBetween: 50,
+    loop: true,
+    grabCursor: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    loop: true,
+});
     
