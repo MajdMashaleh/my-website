@@ -172,4 +172,34 @@ var swiper = new Swiper(".mySwiper", {
     },
     loop: true,
 });
-    
+
+// Visitor Counter Functionality
+let counter = localStorage.getItem('counter'); // Get stored counter value from localStorage
+
+if (!counter) {
+    counter = 0; // If there's no counter in localStorage, set it to 0
+} else {
+    counter = parseInt(counter); // Parse the value as a number
+}
+
+// Get the counter element from the HTML
+let counterElement = document.getElementById('counter');
+
+// Increment the counter when the page loads
+counter++;
+
+// Update the counter display
+counterElement.textContent = counter;
+
+// Save the updated counter value to localStorage
+localStorage.setItem('counter', counter);
+
+// Optional: Add a button to manually increment the counter (you can skip this if not needed)
+let incrementBtn = document.getElementById('increment-btn');
+if (incrementBtn) {
+    incrementBtn.onclick = () => {
+        counter++; // Increment the counter
+        counterElement.textContent = counter; // Update the counter display
+        localStorage.setItem('counter', counter); // Store the updated value
+    };
+}

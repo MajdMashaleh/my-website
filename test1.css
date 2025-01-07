@@ -1018,6 +1018,12 @@ span{
     font-size: 1.6rem;
 }
 
+#counter-container {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+
 .footer-iconTop{
     position: relative;
     display: inline-flex;
