@@ -42,7 +42,7 @@
        const projects = {
     "1": {
         title: "Vehicular Whisper Net: Silent Car Security",
-        description: "Creating a new system to limit car theft to a minimum using ESP32 technology and a special messaging system.",
+        description: "Developing a system to minimize car theft using ESP32 technology and a special messaging system.",
         image: "project1.jpg",  
         buttons: {
             presentation: "https://docs.google.com/presentation/d/11bz6nnWPiWNLojLuKA4i3NzoR3V7CVUb/edit?usp=sharing&ouid=115540470452184991018&rtpof=true&sd=true",
@@ -71,7 +71,7 @@
     },
     "4": {
         title: "certificates",
-        description:"Here are my certifications, showcasing my skills and dedication to learning in fields like cybersecurity, networking, programming, and more. They reflect my growth and commitment to staying updated with industry trends.",
+        description:"My certifications showcase my skills and commitment to continuous learning in areas such as cybersecurity, networking, and programming. They highlight my growth and dedication to staying current with industry trends.",
         image:  "project4.PNG",  
         buttons: {
             certificates: "https://drive.google.com/drive/folders/1MJQ0tEVb0zVSvNVe0FJcp6lpUIe76FDX?usp=sharing",
@@ -79,7 +79,7 @@
     },
     "5": {
         title: "Security Labs",
-        description: "This project involves practicing ethical hacking in labs. It includes testing systems, finding weaknesses, and learning how to improve security.",
+        description: "This projects involves hands-on ethical hacking practice, focusing on system testing, vulnerability identification, and enhancing security measures.",
         image: "project5.jpg",  
         buttons: {
             networksecurity: "https://drive.google.com/file/d/1EGRVlhsThduZYzC9KB8NAIHFBJjGPIxk/view?usp=drive_link",
@@ -88,7 +88,7 @@
     },
     "6": {
         title: "Password Security Projects",
-        description: "This project involves creating strong passwords and testing ways to crack them. It helps understand how to improve password security.",
+        description: "This project explores the creation of strong passwords and testing password-cracking methods, aiming to enhance password security.",
         image: "project6.jpg",  
         buttons: {
             github: "https://github.com/MajdMashaleh/a-gmae-to-generate-and-guess-password",
@@ -97,11 +97,9 @@
     },
 };
 
-// Get the project ID from the URL query string
 const urlParams = new URLSearchParams(window.location.search);
 const projectId = urlParams.get('project');
 
-// Get elements
 const titleElement = document.getElementById('project-title');
 const descriptionElement = document.getElementById('project-description');
 const projectImage = document.getElementById('project-image');
