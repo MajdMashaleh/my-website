@@ -1148,24 +1148,6 @@ section:nth-child(odd) .animate.scroll,
 
 
 @media (max-width: 768px) {
-  .home {
-    flex-direction: column-reverse; /* Show image below text */
-    align-items: center;
-    text-align: center;
-  }
-
-  .home-content {
-    max-width: 100%;
-  }
-
-  .home-imgHover {
-    max-width: 250px;
-  }
-
-  .img-container {
-    width: 250px;
-    height: 250px;
-  }
   .navbar {
     position: fixed;
     top: 0;
@@ -1199,6 +1181,26 @@ section:nth-child(odd) .animate.scroll,
     color: var(--text-color);
     cursor: pointer;
     z-index: 1000;
+  }
+   .home {
+    flex-direction: row; /* Keep image on right side */
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .home-content {
+    max-width: 60%; /* Text takes about 60% */
+  }
+
+  .home-imgHover {
+    max-width: 35%; /* Image takes about 35% */
+    height: auto;
+  }
+
+  .img-container {
+    width: auto;
+    height: auto;
   }
 }
 
