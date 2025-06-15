@@ -1190,11 +1190,11 @@ section:nth-child(odd) .animate.scroll,
   }
 
   .home-content {
-    max-width: 60%; /* Text takes about 60% */
+    max-width: 40%; /* Text takes about 60% */
   }
 
   .home-imgHover {
-    max-width: 35%; /* Image takes about 35% */
+    max-width: auto; 
     height: auto;
   }
 
