@@ -1194,7 +1194,7 @@ section:nth-child(odd) .animate.scroll,
     }
 
     .home-content h1 {
-        font-size: 2.6rem;
+        font-size: 2.0rem;
     }
 
     .home-content .txt-animate h3 {
@@ -1211,7 +1211,7 @@ section:nth-child(odd) .animate.scroll,
     }
 
     .img-container {
-        width: 150px;
+        width: 250px;
         height: auto;
     }
 }
