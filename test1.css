@@ -98,16 +98,23 @@ section{
 
 /* Home Section */
 .home {
-    display: flex;
-    padding: 0 9%;
-    align-items: center;
-    background-size: cover;
-    background-position: center; ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Allow wrapping */
+  gap: 3rem;
 }
-.home-content{
-    max-width: 50rem;
-    z-index: 99;
+
+.home-content {
+  flex: 1 1 400px;
+  max-width: 600px;
 }
+
+.home-imgHover {
+  flex: 1 1 300px;
+  max-width: 350px;
+}
+
 
 .home-content h1 {
     position: relative;
@@ -1141,41 +1148,26 @@ section:nth-child(odd) .animate.scroll,
 
 
 @media (max-width: 768px) {
-  .navbar {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 60%;
-    height: 100vh;
-    background: var(--bg-color);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: 6rem 2rem;
-    transition: right 0.3s ease;
-    z-index: 999;
+  .home {
+    flex-direction: column-reverse; /* Show image below text */
+    align-items: center;
+    text-align: center;
   }
 
-  .navbar a {
-    margin: 1.5rem 0;
-    font-size: 1.8rem;
-    color: var(--text-color);
-    transition: 0.3s;
+  .home-content {
+    max-width: 100%;
   }
 
-  .navbar.active {
-    right: 0;
+  .home-imgHover {
+    max-width: 250px;
   }
 
-  #menu-icon {
-    display: block;
-    font-size: 3rem;
-    color: var(--text-color);
-    cursor: pointer;
-    z-index: 1000;
+  .img-container {
+    width: 250px;
+    height: 250px;
   }
 }
+
 
 
 
